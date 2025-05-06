@@ -12,6 +12,9 @@ const __dirname = path.dirname(__filename);
 const app = express();
 const port = process.env.PORT || 3000;
 
+
+app.use("/assets", express.static(path.join(__dirname, "build/client/assets")));
+app.use("/build", express.static(path.join(__dirname, "public/build")));
 app.use(express.static("public"));
 
 app.all(

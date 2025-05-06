@@ -1,4 +1,4 @@
-// app/routes/root.tsx
+// app/root.tsx
 import {
   Links,
   Meta,
@@ -8,10 +8,11 @@ import {
 } from "@remix-run/react";
 import type { LinksFunction } from "@remix-run/node";
 
-import tailwindStyles from "~/tailwind.css"; // 👈 相対パスが大事！
+import tailwindStylesHref from './tailwind.css?url';
+// import './tailwind.css';
 
 export const links: LinksFunction = () => [
-  { rel: "stylesheet", href: tailwindStyles },
+  { rel: "stylesheet", href: tailwindStylesHref  },
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
   {
     rel: "preconnect",

@@ -1,3 +1,4 @@
+// pm2.config.cjs
 module.exports = {
     apps: [
       {
