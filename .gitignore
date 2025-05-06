@@ -1,0 +1,14 @@
+node_modules
+
+/.cache/
+/build/
+.env
+/public/
+/logs/
+/python/
+/system_venv/
+/venv/
+/pic/
+calender.png
+calender.bmp
+*.pyc
